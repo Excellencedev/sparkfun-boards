@@ -1,25 +1,27 @@
 {
-	"name": "sparkfun-boards",
-	"module": "index.ts",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"format": "biome format --write .",
-		"format:check": "biome format .",
-		"tsci-build": "tsci build",
-		"snapshot": "tsci snapshot --3d",
-		"snapshot:update": "tsci snapshot --update --3d",
-		"start": "bunx tsci dev"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@tscircuit/props": "^0.0.470",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5"
-	},
-	"dependencies": {
-		"tscircuit": "^0.0.1275"
-	}
+  "name": "sparkfun-boards",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "tsci-build": "tsci build",
+    "snapshot": "tsci snapshot --3d",
+    "snapshot:update": "tsci snapshot --update --3d",
+    "start": "node init && bunx tsci dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@tscircuit/props": "^0.0.470",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
+    "tscircuit": "^0.0.1314"
+  }
 }
